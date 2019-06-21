@@ -1,9 +1,9 @@
 workflow "Issues" {
-    on = "issue"
+    on = "issues"
     resolve = "IssueHandler"
 }
 
 action "IssueHandler" {
-    use = "Ash258/Scoop-GithubActions@master"
+    uses = "Ash258/Scoop-GithubActions@master"
     args = "Issue"
 }
