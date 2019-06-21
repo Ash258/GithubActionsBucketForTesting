@@ -1,5 +1,5 @@
 workflow "Issues" {
-    on = "issues.opened"
+    on = "issues"
     resolves = "IssueHandler"
 }
 
