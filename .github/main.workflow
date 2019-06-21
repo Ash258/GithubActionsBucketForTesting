@@ -1,6 +1,6 @@
 workflow "Issues" {
     on = "issues"
-    resolve = "IssueHandler"
+    resolves = "IssueHandler"
 }
 
 action "IssueHandler" {
