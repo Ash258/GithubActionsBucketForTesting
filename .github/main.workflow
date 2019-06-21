@@ -6,4 +6,5 @@ workflow "Issues" {
 action "IssueHandler" {
     uses = "Ash258/Scoop-GithubActions@master"
     args = "Issue"
+    secrets = ["GITHUB_TOKEN"]
 }
