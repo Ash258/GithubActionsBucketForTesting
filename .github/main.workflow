@@ -3,7 +3,7 @@ workflow "Issues" {
     resolve = "IssueHandler"
 }
 
-action "IssueHandler {
+action "IssueHandler" {
     use = "Ash258/Scoop-GithubActions@master"
     args = "Issue"
 }
