@@ -8,12 +8,23 @@ action "IssueHandler" {
     args = "Issue"
     secrets = [ "GITHUB_TOKEN" ]
 }
+
+workflow "Pull requests" {
+    on = "pull_requests"
+    resolves = [ "PullRequestHandler" ]
+}
+
+action "PullRequestHandler" {
+    uses = "Ash258/Scoop-GithubActions@master"
+    args = "PR"
+    secrets = [ "GITHUB_TOKEN" ]
+}
+
 workflow "Excavator" {
     on = "schedule(0 * * * *)"
     resolves = [ "Excavate" ]
 }
 
-# Post comment to specific issue each 5 minutes
 action "Excavate" {
     uses = "Ash258/Scoop-GithubActions@master"
     args = "Scheduled"
