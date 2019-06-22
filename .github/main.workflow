@@ -10,7 +10,7 @@ action "IssueHandler" {
 }
 
 workflow "Pull requests" {
-    on = "pull_requests"
+    on = "pull_request"
     resolves = [ "PullRequestHandler" ]
 }
 
