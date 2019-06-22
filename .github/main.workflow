@@ -9,7 +9,7 @@ action "IssueHandler" {
     secrets = [ "GITHUB_TOKEN" ]
 }
 workflow "Excavator" {
-    on = "schedule(*/5 * * * *)"
+    on = "schedule(0 * * * *)"
     resolves = [ "Excavate" ]
 }
 
