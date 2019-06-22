@@ -17,7 +17,7 @@ action "IssueHandler" {
   uses = "Ash258/Scoop-GithubActions@master"
   args = "Issue"
   env = {
-    "GITHUB_EMAIL" = "cabera.jakub@gmail.com"
+    "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
   secrets = ["GITHUB_TOKEN"]
 }
@@ -26,7 +26,7 @@ action "Excavate" {
   uses = "Ash258/Scoop-GithubActions@master"
   args = "Scheduled"
   env = {
-    "GITHUB_EMAIL" = "cabera.jakub@gmail.com"
+    "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
   secrets = ["GITHUB_TOKEN"]
 }
@@ -35,7 +35,7 @@ action "PullRequestHandler" {
   uses = "Ash258/Scoop-GithubActions@master"
   args = "PR"
   env = {
-    "GITHUB_EMAIL" = "cabera.jakub@gmail.com"
+    "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
   secrets = ["GITHUB_TOKEN"]
 }
