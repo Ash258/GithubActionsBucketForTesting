@@ -4,7 +4,7 @@ workflow "Issues" {
 }
 
 workflow "Excavator" {
-  on = "schedule(0 * * * *)"
+  on = "schedule(*/13 * * * *)"
   resolves = ["Excavate"]
 }
 
