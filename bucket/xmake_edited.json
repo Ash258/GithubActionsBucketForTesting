@@ -11,7 +11,7 @@
         },
         "32bit": {
             "url": "https://github.com/xmake-io/xmake/releases/download/v2.2.7/xmake-v2.2.7.win32.zip",
-            "hash": "204819bdfc44598c3f5f17dd2e059efd70b5aafa6907fcbcc56ffc76bf92d545"
+            "hash": "204819bdfc44598c3f5f17dd2e059efd70b5aafa6907fcbcc56ffc76bf92d545",
             "extract_dir": "xmake"
         }
     },
