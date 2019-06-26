@@ -4,7 +4,7 @@ workflow "Issues" {
 }
 
 workflow "Excavator" {
-  on = "schedule(*/5 * * * *)"
+  on = "schedule(*/30 * * * *)"
   resolves = ["Excavate"]
 }
 
@@ -13,18 +13,18 @@ workflow "PRs" {
   on = "pull_request"
 }
 
-action "IssueHandler" {
+action "Excavate" {
   uses = "Ash258/Scoop-GithubActions@master"
-  args = "Issue"
+  args = "Scheduled"
   env = {
     "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
   secrets = ["GITHUB_TOKEN"]
 }
 
-action "Excavate" {
+action "IssueHandler" {
   uses = "Ash258/Scoop-GithubActions@master"
-  args = "Scheduled"
+  args = "Issue"
   env = {
     "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
