@@ -9,7 +9,7 @@
             "extract_dir": "xmake"
         },
         "32bit": {
-            "extract_dir": "xmake"
+            "extract_dir": "xmakeAAA"
         }
     },
     "bin": "xmake.exe",
