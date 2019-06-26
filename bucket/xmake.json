@@ -1,6 +1,6 @@
 {
     "homepage": "https://xmake.io",
-    "description": "A cross-platform build utility based on Lua.",
+    "description": "A cross-platform build utility based on Lua..",
     "version": "2.2.7",
     "license": "Apache-2.0",
     "architecture": {
