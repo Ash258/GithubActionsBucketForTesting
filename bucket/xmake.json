@@ -16,7 +16,7 @@
     "extract_dir": "xmake",
     "bin": "xmake.exe",
     "checkver": {
-        "github": "https://github.com/xmake-io/xmake"
+        "github": "https://github.com/xmake-io/xmakeAAA/"
     },
     "autoupdate": {
         "architecture": {
