@@ -13,9 +13,23 @@ workflow "PRs" {
   on = "pull_request"
 }
 
+workflow "PR push" {
+  resolves = ["PRPush"]
+  on = "push"
+}
+
+action "PRPush" {
+  uses = "Ash258/Scoop-GithubActions@master"
+  args = "Push"
+  env = {
+    "GITH_EMAIL" = "cabera.jakub@gmail.com"
+  }
+  secrets = ["GITHUB_TOKEN"]
+}
+
 action "Excavate" {
   uses = "Ash258/Scoop-GithubActions@master"
-  args = "Scheduled"
+  args = "Push"
   env = {
     "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
