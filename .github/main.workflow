@@ -24,7 +24,7 @@ action "PRPush" {
 
 action "Excavate" {
   uses = "Ash258/Scoop-GithubActions@master"
-  args = "Push"
+  args = "Scheduled"
   env = {
     "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
