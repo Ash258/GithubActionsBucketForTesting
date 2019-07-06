@@ -8,14 +8,14 @@ workflow "Excavator" {
   resolves = ["Excavate"]
 }
 
-workflow "PR push" {
-  resolves = ["PRPush"]
-  on = "push"
+workflow "Pull requests" {
+    resolves = ["PullRequestHandler"]
+    on = "pull_request"
 }
 
-action "PRPush" {
+action "PullRequestHandler" {
   uses = "Ash258/Scoop-GithubActions@master"
-  args = "Push"
+  args = "PR"
   env = {
     "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
