@@ -17,7 +17,7 @@
     List of manifests, which should be updated allways. (Force updated)
 #>
 param(
-    [Alias('App', 'Name')]
+    [Alias('App', 'Name', "COSI")]
     [String] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
     [String] $Dir = "$PSScriptRoot\..\bucket",
