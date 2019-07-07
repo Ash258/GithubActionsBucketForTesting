@@ -13,6 +13,11 @@ workflow "Pull requests" {
     on = "pull_request"
 }
 
+workflow "Pull requests comment" {
+    resolves = ["PullRequestHandler"]
+    on = "issue_comment"
+}
+
 action "PullRequestHandler" {
   uses = "Ash258/Scoop-GithubActions@master"
   args = "PR"
