@@ -18,7 +18,7 @@ workflow "Pull requests comment" {
     on = "issue_comment"
 }
 
-workflow "Pull requests comment" {
+workflow "Push" {
     resolves = ["Push"]
     on = "push"
 }
