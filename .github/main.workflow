@@ -18,6 +18,20 @@ workflow "Pull requests comment" {
     on = "issue_comment"
 }
 
+workflow "Pull requests comment" {
+    resolves = ["Push"]
+    on = "push"
+}
+
+action "Push" {
+  uses = "Ash258/Scoop-GithubActions@master"
+  args = "Push"
+  env = {
+    "GITH_EMAIL" = "cabera.jakub@gmail.com"
+  }
+  secrets = ["GITHUB_TOKEN"]
+}
+
 action "PullRequestHandler" {
   uses = "Ash258/Scoop-GithubActions@master"
   args = "PR"
