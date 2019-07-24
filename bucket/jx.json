@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/jenkins-x/jx/releases/download/v2.0.509/jx-windows-amd64.zip",
-            "hash": "brokenHash"
+            "hash": "f3eaac9613f14e9e3dbabaf3c943bed1192f8a667cb09557ee44e11696127b21"
         }
     },
     "bin": [
