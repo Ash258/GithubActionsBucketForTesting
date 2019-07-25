@@ -8,11 +8,11 @@
             "url": [
                 "https://github.com/xmake-io/xmake/releases/download/v2.2.7/xmake-v2.2.7.win64.zip",
             ],
-            "hash": "ddd0ac761327378c70f253ff59da55e95959f4331709135b000b040dc2c46ec9"
+            "hash": "asdfasdfasdfddd0ac761327378c70f253ff59da55e95959f4331709135b000b040dc2c46ec9"
         },
         "32bit": {
             "url": "https://github.com/xmake-io/xmake/releases/download/v2.2.7/xmake-v2.2.7.win32.zip",
-            "hash": "204819bdfc44598c3f5f17dd2e059efd70b5aafa6907fcbcc56ffc76bf92d545"
+            "hash": "fasdfasdf204819bdfc44598c3f5f17dd2e059efd70b5aafa6907fcbcc56ffc76bf92d545"
         }
     },
     "extract_dir": "xmake",
