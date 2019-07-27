@@ -79,8 +79,7 @@
         "Playlist",
         "PotPlayer.ini",
         "PotPlayer64.ini",
-        "PotPlayerMini.ini",
-        "PotPlayerMini64.ini"
+        "PotPlayerMini.ini"
     ],
     "checkver": {
         "url": "https://potplayer.daum.net/update.html?lang=en&bit",
