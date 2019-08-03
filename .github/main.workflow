@@ -19,7 +19,7 @@ workflow "Pull requests comment" {
 }
 
 action "PullRequestHandler" {
-  uses = "Ash258/Scoop-GithubActions@0.7.1"
+  uses = "Ash258/Scoop-GithubActions@master"
   env = {
     "GITH_EMAIL" = "cabera.jakub@gmail.com"
   }
