@@ -13,4 +13,4 @@ jobs:
       env:
         GITH_EMAIL: cabera.jakub@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SKIP_UPDATED: "1"
+        SKIP_UPDATED: '1'
