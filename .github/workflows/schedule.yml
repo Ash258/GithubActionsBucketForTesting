@@ -1,6 +1,6 @@
 on:
   schedules:
-  - cron: '*/10 * * * *'
+  - cron: '0 * * * *'
 name: Excavator
 jobs:
   excavate:
