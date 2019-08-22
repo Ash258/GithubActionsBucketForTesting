@@ -14,4 +14,5 @@ jobs:
         GITH_EMAIL: cabera.jakub@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SSH_KEY: ${{ secrets.SSH_KEY }}
+        SSH_PUB: ${{ secrets.SSH_PUB }}
         SKIP_UPDATED: '1'
