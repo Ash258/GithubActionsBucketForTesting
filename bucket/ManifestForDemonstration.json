@@ -5,7 +5,7 @@
     "version": "2.0.741",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jenkins-x/jx/releases/download/v2.0.741/jx-windows-amd64.zip",
+            "url": "https://github.com/jenkins-x/jx/releases/download/v2.0.741/jx-windows-amd64.zip#/cosi.zip",
             "hash": "f6382ce0299392a2c3ff36718cabad188f0dbffd996986506dff0bac610576f6"
         }
     },
@@ -14,12 +14,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/jenkins-x/jx/releases/download/v$version/jx-windows-amd64.zip"
+                "url": "https://github.com/jenkins-x/jx/releases/download/v$version/jx-windows-amd64.zip#/cosi.zip"
             }
         },
         "hash": {
             "url": "$baseurl/jx-checksums.txt"
         }
-    },
-    "pre_install": "Stop-Process -Name jx -Verbose -ErrorAction Ignore"
+    }
 }
