@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: IssueHandler
-      uses: Ash258/Scoop-GithubActions@master
+      uses: Ash258/Scoop-GithubActions@stable
       env:
         GITH_EMAIL: cabera.jakub@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
