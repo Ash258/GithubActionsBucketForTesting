@@ -17,7 +17,7 @@
     "bin": "xmake.exe",
     "checkver": {
         "github": "https://github.com/xmake-io/xmake/"
-    },
+    }
     "autoupdate": {
         "architecture": {
             "64bit": {
