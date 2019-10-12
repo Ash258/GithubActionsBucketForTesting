@@ -32,7 +32,7 @@
                 "url": "https://github.com/xmake-io/xmake/releases/download/v$version/xmake-v$version.win32.zip",
                 "hash": {
                     "url": "$baseurl/xmake-v$version.win32.sha256",
-                    "regex": "$sha256.*?zip"
+                    "regex": "$sha256fasdfasdfasdf.*?zip"
                 }
             }
         }
