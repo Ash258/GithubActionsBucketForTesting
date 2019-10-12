@@ -1,4 +1,6 @@
-on: issues
+on:
+  issues:
+    types: [opened]
 name: Issues
 jobs:
   issueHandler:
