@@ -12,6 +12,5 @@ jobs:
       uses: Ash258/Scoop-GithubActions@master
       env:
         GITH_EMAIL: cabera.jakub@gmail.com
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SSH_KEY: ${{ secrets.SSH_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_ASH258 }}
         SKIP_UPDATED: '1'
