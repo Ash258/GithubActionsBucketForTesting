@@ -9,9 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Excavate
-      uses: Ash258/Scoop-GithubActions@master
+      uses: Ash258/Scoop-GithubActions@excavatorTest
       env:
         GITH_EMAIL: cabera.jakub@gmail.com
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SSH_KEY: ${{ secrets.SSH_KEY }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_ASH258 }}
         SKIP_UPDATED: '1'
