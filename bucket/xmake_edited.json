@@ -16,7 +16,7 @@
     },
     "bin": "xmake.exe",
     "checkver": {
-        "github": "https://github.com/xmake-io/xmakeasdfasd"
+        "github": "https://github.com/xmake-io/xmake"
     },
     "autoupdate": {
         "architecture": {
