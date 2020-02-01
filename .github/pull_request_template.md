@@ -2,6 +2,7 @@
 name: New manifest
 about: Add new manifest into the bucket.
 title: '%manifestname%: Add version %manifestversion%'
+labels: verify
 ---
 
 <!-- Is there an issue, which requests this manifest? -->
