@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: PullRequestHandler
-      uses: Ash258/Scoop-GithubActions@master
+      uses: Ash258/Scoop-GithubActions@master-win
       if: startsWith(github.event.comment.body, '/verify')
       env:
         GITH_EMAIL: youremail@mail.com # Not needed, but recommended
