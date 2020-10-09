@@ -5,7 +5,7 @@
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xmake-io/xmake/releases/download/v2.2.9/xmake-v2.2.9.win64.zip",
+            "url": "https://github.com/xmake-io/xmake/releases/dowfdsafdsfnload/v2.2.9/xmake-v2.2.9.win64.zip",
             "hash": "07ae3d197886c1b8c4132888b78bce927bbab5b0de27c17ed26ba943c067fdf0"
         },
         "32bit": {
