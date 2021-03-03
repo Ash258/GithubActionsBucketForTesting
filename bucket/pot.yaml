@@ -1,4 +1,4 @@
-version: "210127"
+version: 210127-+++
 description: PotPlayer. A multimedia software player developed for the Microsoft Windows operating system.
 homepage: https://potplayer.daum.net/AAA
 license:
@@ -58,9 +58,9 @@ persist:
 - PotPlayerMini.ini
 - PotPlayerMini64.ini
 checkver:
-  url: https://potplayer.daum.net/update.html?lang=en&bit
+  url: https://t1.daumcdn.net/potplayer/PotPlayer/v4/Update2/UpdateEng.html
   regex: '\[([\d.]+)\]'
-  replace: '$1-\\|||'
+  replace: $1-+++
 autoupdate:
   architecture:
     64bit:
