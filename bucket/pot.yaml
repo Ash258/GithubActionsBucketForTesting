@@ -60,6 +60,7 @@ persist:
 checkver:
   url: https://potplayer.daum.net/update.html?lang=en&bit
   regex: '\[([\d.]+)\]'
+  replace: '$1-\\|||'
 autoupdate:
   architecture:
     64bit:
