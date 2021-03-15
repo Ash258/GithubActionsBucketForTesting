@@ -16,4 +16,4 @@ jobs:
         SKIP_UPDATED: '1'
         SHOVEL: '1'
         TERM: xterm-256color
-        SCOOP_BRANCH: utilsCommand
+        SCOOP_BRANCH: mainAdoption
