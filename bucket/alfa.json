@@ -47,6 +47,7 @@
         "GuiConfigs"
     ],
     "checkver": {
+        "disable": true,
         "github": "https://github.com/RPCS3/rpcs3-binaries-win",
         "regex": "/build-(?<commit>(?<cosi>\\w{8})\\w{32})/rpcs3-v([\\d.-]+)-"
     },
