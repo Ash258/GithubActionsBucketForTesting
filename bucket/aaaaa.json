@@ -52,6 +52,7 @@
     },
     "autoupdate": {
         "note": "cosi necum",
+        "archive": true,
         "architecture": {
             "64bit": {
                 "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommit/rpcs3-v$version-$matchCosi_win64.7z",
