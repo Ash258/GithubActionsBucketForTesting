@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    paths-ignore:
+    - '**/*.md'
+    - '.vscode/**/*'
+
+env:
+  CI: '1'
+  GITHUB_WORKSPACE: C:\projects\scoop\buckets
+  SCOOP: C:\projects\scoop
+  SCOOP_HOME: C:\projects\scoop\apps\scoop\current
+  SCOOP_HELPERS: C:\projects\helpers
+
+jobs:
+  test:
+    runs_on: windows-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+      with:
+        path: Ash258
+    - name: Setup dependencies cache
+      id: cacher
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~\Documents\Documents\WindowsPowerShell\Modules
+          C:\projects\helpers
+          C:\projects\scoop\apps
+          C:\projects\scoop\buckets\main
+        key: ${{ runner.os }}-Shovel-Cache
+    - name: Setup dependencies
+      if: steps.cacher.outputs.cache-hit != 'true'
+      shell: pwsh
+      run: |
+        # See if this can be removed
+        Set-PSRepository 'PSGallery' -InstallationPolicy 'Trusted'
+        Install-Module -Repository 'PSGallery' -Scope 'CurrentUser' -Force -Name 'Pester' -RequiredVersion 4.10.1 -SkipPublisherCheck
+        Install-Module -Repository 'PSGallery' -Scope 'CurrentUser' -Force -Name 'PSScriptAnalyzer', 'BuildHelpers'
+    - name: Initialize Shovel
+      if: steps.cacher.outputs.cache-hit != 'true'
+      shell: pwsh
+      run: |
+        git clone --branch 'main' --quiet --depth=1 "https://github.com/Ash258/Scoop-Core.git" "$env:SCOOP_HOME"
+        git clone --quiet --depth=1 'https://github.com/ScoopInstaller/Main' "$env:SCOOP\buckets\main"
+    - name: Update Shovel
+      if: steps.cacher.outputs.cache-hit == 'true'
+      shell: pwsh
+      run: |
+        git -C "$env:SCOOP_HOME" pull
+        git -C "$env:SCOOP\buckets\main" pull
+    - name: PowerShell 7
+      shell: pwsh
+      run: |
+        . "$env:SCOOP_HOME\test\bin\init.ps1"
+        . "$env:SCOOP_HOME\test\bin\test.ps1" -TestPath "$env:GITHUB_WORKSPACE\Ash258"
+    - name: PowerShell 5
+      shell: powershell
+      run: |
+        . "$env:SCOOP_HOME\test\bin\init.ps1"
+        . "$env:SCOOP_HOME\test\bin\test.ps1" -TestPath "$env:GITHUB_WORKSPACE\Ash258"
