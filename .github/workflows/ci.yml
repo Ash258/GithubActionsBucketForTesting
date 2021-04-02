@@ -16,7 +16,7 @@ env:
 
 jobs:
   test:
-    runs_on: windows-latest
+    runs-on: windows-latest
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
