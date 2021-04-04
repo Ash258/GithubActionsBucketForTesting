@@ -1,0 +1,49 @@
+{
+    "version": "0.0.15-11965",
+    "description": "RPCS3. Experimental Sony PlayStation 3 emulator and debugger",
+    "homepage": "https://rpcs3.net",
+    "license": {
+        "identifier": "GPL-2.0-or-later",
+        "url": "https://github.com/RPCS3/rpcs3/blob/master/LICENSE"
+    },
+    "notes": [
+        "Install firmware via 'File -> Install firmware'.",
+        "    Latest firmware file ('PS3UPDAT.PUP') is located inside app directory ('$dir').",
+        "HOW TO INSTALL GAME:",
+        "1.   Download games from 'https://psndl.net/packages'",
+        "1.1.       Both files ('Rap', 'Package') are needed",
+        "2.   Install via 'File -> Install .pkg'",
+        "3.   Copy RAP file and paste it into '$dir\\dev_hdd0\\home\\00000001\\exdata'",
+        "4.   Enjoy the game <3"
+    ],
+    "suggest": {
+        "Microsoft Visual C++ Runtime 2019": "extras/vcredist2019"
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-8716ac554fcbab9afa15996f2f71807f45cf21d0/rpcs3-v0.0.15-11965-8716ac55_win64.7z",
+                "http://dus01.ps3.update.playstation.net/update/ps3/image/us/2020_0331_cf9cb4ba53a83ad557501417837c8de9/PS3UPDAT.PUP"
+            ],
+            "hash": [
+                "f82ff9def40134571444522064cfdd70e383cb00edff1ce3be2789a0a1c2c62b",
+                "14ad0a4716d2bdf096dab9ecf77b9b838cc64435db7925837a38979fa05f4012"
+            ]
+        }
+    },
+    "pre_install": [
+        "try { Get-Command 'Test-Persistence' -ErrorAction 'Stop' | Out-Null } catch { error 'Shovel flavour of scoop is required'; exit 258 }",
+        "Test-Persistence 'GuiConfigs\\CurrentSettings.ini' '[Meta]', 'currentStylesheet=Darker Style by TheMitoSan'"
+    ],
+    "bin": "rpcs3.exe",
+    "shortcuts": [
+        [
+            "rpcs3.exe",
+            "RPCS3"
+        ]
+    ],
+    "persist": [
+        "dev_hdd0",
+        "GuiConfigs"
+    ]
+}
