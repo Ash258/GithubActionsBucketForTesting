@@ -1,0 +1,27 @@
+$schema: https://raw.githubusercontent.com/Ash258/Scoop-Core/featArmBasicSupport/schema.json
+version: 1.16.0
+description: Execute commands in response to file modifications
+homepage: https://github.com/watchexec/watchexec
+license: Apache-2.0
+architecture:
+  64bit:
+    url: https://github.com/watchexec/watchexec/releases/download/cli-v1.16.0/watchexec-1.16.0-x86_64-pc-windows-msvc.zip
+    hash: d344fdd354aa46c5bde3dc17087992a0c864202cb171fa90c8f3483dd219549a
+    extract_dir: watchexec-1.16.0-x86_64-pc-windows-msvc
+  arm64:
+    url: https://github.com/watchexec/watchexec/releases/download/cli-v1.16.0/watchexec-1.16.0-aarch64-pc-windows-msvc.zip
+    hash: 7b6e73ce3d87c03fb88ed72da8a1abbb6aee3017bcf58205de662cfdc69e6bcc
+    extract_dir: watchexec-1.16.0-aarch64-pc-windows-msvc
+bin: watchexec.exe
+checkver:
+  github: https://github.com/watchexec/watchexec
+  regex: download/cli-v([\d.+]+)/
+autoupdate:
+  architecture:
+    64bit:
+      url: https://github.com/watchexec/watchexec/releases/download/cli-v$version/watchexec-$version-x86_64-pc-windows-msvc.zip
+      extract_dir: watchexec-$version-x86_64-pc-windows-msvc
+    arm64:
+      url: https://github.com/watchexec/watchexec/releases/download/cli-v$version/watchexec-$version-aarch64-pc-windows-msvc.zip
+      extract_dir: watchexec-$version-aarch64-pc-windows-msvc
+
