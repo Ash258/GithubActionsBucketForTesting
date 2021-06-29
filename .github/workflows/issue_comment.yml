@@ -9,9 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: PullRequestHandler
-      uses: Ash258/Scoop-GithubActions@main-win
+      uses: shovel-org/GithubActions@main
       if: startsWith(github.event.comment.body, '/verify') && contains(fromJSON('["Ash258", "CosiTemporaryTest"]'), github.event.comment.user.login)
       env:
         GITH_EMAIL: youremail@mail.com # Not needed, but recommended
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SHOVEL: '1'

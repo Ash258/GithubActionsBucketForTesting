@@ -9,8 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: IssueHandler
-      uses: Ash258/Scoop-GithubActions@main-win
+      uses: shovel-org/GithubActions@main
       if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SHOVEL: '1'
