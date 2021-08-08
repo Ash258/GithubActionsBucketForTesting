@@ -1,3 +1,4 @@
+$schema: https://raw.githubusercontent.com/Ash258/Scoop-Core/NEW/schema.json
 '##': cosi
 version: 0.0.14-11749
 description: RPCS3. Experimental Sfasfsaony PlayStation 3 emulator and debugger
@@ -16,7 +17,6 @@ notes:
 - 4.   Enjoy the game <3
 suggest:
   Microsoft Visual C++ Runtime 2019: extras/vcredist2019
-$schema: https://raw.githubusercontent.com/Ash258/Scoop-Core/NEW/schema.json
 architecture:
   64bit:
     url:
@@ -60,4 +60,3 @@ checkver:
   regex: cosi
   github: https://github.com/RPCS3/rpcs3-binaries-win
   replace: afa
-
