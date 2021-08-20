@@ -1,4 +1,4 @@
-<#
+<#afasdfsadf
 .SYNOPSIS
     Updates manifests and pushes them or creates pull-requests.
 .DESCRIPTION
