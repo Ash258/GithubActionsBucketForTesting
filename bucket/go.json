@@ -2,10 +2,6 @@
     "version": "1.17",
     "description": "Programming language that makes it easy to build simple, reliable, and efficient software.",
     "homepage": "https://golang.org",
-    "license": {
-        "identifier": "BSD-3-Clause",
-        "url": "https://golang.org/LICENSE"
-    },
     "changelog": "https://golang.org/doc/devel/release#go1.17",
     "notes": [
         "Your GOROOT has been set to: '$dir'",
@@ -55,7 +51,7 @@
             }
         },
         "hash": {
-            "url": "$url.sha256"
+            "url": "$url.sha256789789"
         }
     }
 }

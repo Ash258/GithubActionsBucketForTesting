@@ -19,7 +19,7 @@
         },
         "32bit": {
             "url": "https://dl.google.com/go/go1.16.7.windows-386.zip",
-            "hash": "53b32b48ee2797acf2c5fa8f83c0d42406ae6b5df7e3a57ccbe94cf6272faeec"
+            "hash": "53b32b48ee2asdfasdfasdfasd797acf2c5fa8f83c0d42406ae6b5df7e3a57ccbe94cf6272faeec"
         }
     },
     "extract_dir": "go",
