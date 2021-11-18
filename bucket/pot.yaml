@@ -1,4 +1,4 @@
-version: 210929+++-++++++
+version: 211118+++-++++++
 description: PotPlayer. A multimedia software player developed for the Microsoft Windows operating system.
 homepage: https://potplayer.daum.net/AAA
 license:
@@ -67,4 +67,3 @@ autoupdate:
       url: https://gist.githubusercontent.com/Ash258/e143436e2f9183a650424d635b535e51/raw/Get-VideoDetails.ps1
     32bit:
       url: https://gist.githubusercontent.com/Ash258/e143436e2f9183a650424d635b535e51/raw/Get-VideoDetails.ps1
-
