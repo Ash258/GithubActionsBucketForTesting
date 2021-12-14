@@ -9,11 +9,11 @@ depends:
 architecture:
   64bit:
     url: https://github.com/watchexec/watchexec/releases/download/cli-v1.17.1/watchexec-1.17.1-x86_64-pc-windows-msvc.zip
-    hash: a39e5d711c93b3fd2d08b9196573f727cfdeec70a95f5b0ae4d0a9201a6ab14c
+    hash: a39e5d711c93b3fd2d08b9196573f727cfdeec70a95f5b0ae4d0a9201a6ab14cfsadfsadfsaf
     extract_dir: watchexec-1.17.1-x86_64-pc-windows-msvc
   arm64:
     url: https://github.com/watchexec/watchexec/releases/download/cli-v1.17.1/watchexec-1.17.1-aarch64-pc-windows-msvc.zip
-    hash: 90097897420d1b7bd3c56794efc2564816bdc5dd5c47a1f4266f483efa2d649f
+    hash: 90097897420d1b7bd3c56794efc2564816bdc5dd5c47a1f4266f483efa2d649ffadsfsaf
     extract_dir: watchexec-1.17.1-aarch64-pc-windows-msvc
 bin: watchexec.exe
 checkver:
