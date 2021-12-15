@@ -12,4 +12,5 @@ jobs:
       uses: shovel-org/GithubActions@new.new
       if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
       env:
+        SCOOP_BRANCH: NEW
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
