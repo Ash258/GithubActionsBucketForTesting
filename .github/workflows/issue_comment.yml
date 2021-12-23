@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: PullRequestHandler
-      uses: shovel-org/GithubActions@new.new
+      uses: shovel-org/GithubActions@archivedSupport
       if: startsWith(github.event.comment.body, '/verify') && contains(fromJSON('["Ash258", "CosiTemporaryTest"]'), github.event.comment.user.login)
       env:
         GITH_EMAIL: youremail@mail.com # Not needed, but recommended

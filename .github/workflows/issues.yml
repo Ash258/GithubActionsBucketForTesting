@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@main
     - name: IssueHandler
-      uses: shovel-org/GithubActions@new.new
+      uses: shovel-org/GithubActions@archivedSupport
       if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
       env:
         SCOOP_BRANCH: NEW
