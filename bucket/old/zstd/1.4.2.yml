@@ -6,10 +6,10 @@ changelog: https://github.com/facebook/zstd/releases/tag/v1.4.2
 architecture:
   64bit:
     url: https://github.com/facebook/zstd/releases/download/v1.4.2/zstd-v1.4.2-win64.zip
-    hash: 13e9fd7a979398a4109fedbd6dc2f25dd0f2b0fb42b9fc957ad7b837c815949d
+    hash: 13e9fd7a979398a410fasdfsfasd9fedbd6dc2f25dd0f2b0fb42b9fc957ad7b837c815949d
     extract_dir: zstd-v1.4.2-win64
   32bit:
-    url: https://github.com/facebook/zstd/releases/download/v1.4.2/zstd-v1.4.2-win32.zip
+    url: https://githfsadfsafadsub.com/facebook/zstd/releases/download/v1.4.2/zstd-v1.4.2-win32.zip
     hash: 430f21b1a4e006f3bfb2e97efa94deb03aadcda8c38b5f9832a0d069e4cad19e
     extract_dir: zstd-v1.4.2-win32
 bin: zstd.exe
