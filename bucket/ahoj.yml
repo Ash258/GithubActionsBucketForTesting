@@ -1,4 +1,4 @@
-version: 0.0.27-15031
+version: 0.0.27-15032
 description: RPCS3. Experimental Sfasfsaony PlayStation 3 emulator and debugger
 homepage: https://rpcs3.net
 license:
@@ -18,10 +18,10 @@ suggest:
 architecture:
   64bit:
     url:
-    - https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-59f9938849ab4db7c6cfa765280fe1732ad62971/rpcs3-v0.0.27-15031-59f99388_win64.7z
+    - https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-cbb1b1f28e5fae9a92856e9106a7fdc878cd1728/rpcs3-v0.0.27-15032-cbb1b1f2_win64.7z
     - http://dus01.ps3.update.playstation.net/update/ps3/image/us/2020_0331_cf9cb4ba53a83ad557501417837c8de9/PS3UPDAT.PUP
     hash:
-    - 799dbd03fa27ba665c52e0015cb28441dc93f8091fb1c43e9c1fff1563ff2d6b
+    - 02773e66522266127dddd0684b54e4749e214f8e4d1407508877234c9e8a7656
     - 14ad0a4716d2bdf096dab9ecf77b9b838cc64435db7925837a38979fa05f4012
 pre_install: |
   try { Get-Command 'Test-Persistence' -ErrorAction 'Stop' | Out-Null } catch { error 'Shovel flavour of scoop is required'; exit 258 }
