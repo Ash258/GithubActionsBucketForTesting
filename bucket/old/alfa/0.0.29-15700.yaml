@@ -1,4 +1,4 @@
-version: 0.0.29-15703
+version: 0.0.29-15700
 description: RPCS3. Experimentafasdfasfdl Sony PlayStation 3 emulator and debugger
 homepage: https://rpcs3.net
 license:
@@ -18,10 +18,10 @@ suggest:
 architecture:
   64bit:
     url:
-    - https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-dfa83314df3869d2bb8c3784a666b25e5d6140c7/rpcs3-v0.0.29-15703-dfa83314_win64.7z
+    - https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-a4d809162511e7c7d90ebf89090ea39c1201d616/rpcs3-v0.0.29-15700-a4d80916_win64.7z
     - http://dus01.ps3.update.playstation.net/update/ps3/image/us/2020_0331_cf9cb4ba53a83ad557501417837c8de9/PS3UPDAT.PUP
     hash:
-    - 86e7b380f81c0b5d2150f370203236123871ba220ab05309a72cb9ff2f45e5f4
+    - 599d91870060984051fcf539d457b4144417125107c150f3bb94eb92ca0b094f
     - 14ad0a4716d2bdf096dab9ecf77b9b838cc64435db7925837a38979fa05f4012
 pre_install: |
   try { Get-Command 'Test-Persistence' -ErrorAction 'Stop' | Out-Null } catch { error 'Shovel flavour of scoop is required'; exit 258 }
@@ -33,14 +33,3 @@ shortcuts:
 persist:
 - dev_hdd0
 - GuiConfigs
-checkver:
-  github: https://github.com/RPCS3/rpcs3-binaries-win
-  regex: /build-(?<commit>(?<cosi>\w{8})\w{32})/rpcs3-v([\d.-]+)-
-autoupdate:
-  archive: true
-  architecture:
-    64bit:
-      url: https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommit/rpcs3-v$version-$matchCosi_win64.7z
-      hash:
-        url: https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-$matchCommit
-        regex: $sha256;
