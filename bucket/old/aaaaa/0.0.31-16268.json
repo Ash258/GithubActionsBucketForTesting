@@ -1,5 +1,5 @@
 {
-    "version": "0.0.31-16271",
+    "version": "0.0.31-16268",
     "description": "RPCS3. Experimental Sony PlayStation 3 emulator and debugger",
     "homepage": "https://rpcs3.net",
     "license": {
@@ -22,11 +22,11 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-4ecf8ecd06c15f0557e1d9243f31e4c2d7baebe2/rpcs3-v0.0.31-16271-4ecf8ecd_win64.7z",
+                "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-ec37e8f0dc75f1ef6032382c25ea4fc5c1e677df/rpcs3-v0.0.31-16268-ec37e8f0_win64.7z",
                 "http://dus01.ps3.update.playstation.net/update/ps3/image/us/2020_0331_cf9cb4ba53a83ad557501417837c8de9/PS3UPDAT.PUP"
             ],
             "hash": [
-                "1eadb843f05bfa40717ed6e1c7aee783252684201e027f2baa8fba4bd3e47a69",
+                "d8b58dfe6ad343e2f39a092f19d6d970d8a6d8076c44e07396c8b18b6188a100",
                 "14ad0a4716d2bdf096dab9ecf77b9b838cc64435db7925837a38979fa05f4012"
             ]
         }
@@ -45,22 +45,5 @@
     "persist": [
         "dev_hdd0",
         "GuiConfigs"
-    ],
-    "checkver": {
-        "github": "https://github.com/RPCS3/rpcs3-binaries-win",
-        "regex": "/build-(?<commit>(?<cosi>\\w{8})\\w{32})/rpcs3-v([\\d.-]+)-"
-    },
-    "autoupdate": {
-        "note": "cosi necum",
-        "archive": true,
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-$matchCommit/rpcs3-v$version-$matchCosi_win64.7z",
-                "hash": {
-                    "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-$matchCommit",
-                    "regex": "$sha256;"
-                }
-            }
-        }
-    }
+    ]
 }
