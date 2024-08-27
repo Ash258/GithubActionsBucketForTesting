@@ -1,5 +1,5 @@
 {
-    "version": "240618",
+    "version": "240827",
     "description": "PotPlayer. A multimedia software player developed for the Microsoft Windows operating system.",
     "homepage": "https://potplayer.daum.net/AAA",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe#/cosi.7z",
-            "hash": "1775945d69f8c3a21420051abe246d41ee216d76c01c19438708bf9c726e2ed3",
+            "hash": "cec53f3b76028a065e93bded18111626a01fedcabe341a7ca07d21209a6c0745",
             "shortcuts": [
                 [
                     "PotPlayer64.exe",
@@ -23,7 +23,7 @@
         },
         "32bit": {
             "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup.exe#/cosi.7z",
-            "hash": "d6b46bedfcc58c9537945cdebcc3f584ef059474ef499eaadd2fe6304a8f9f5c",
+            "hash": "7be97699b6f99063096c6e11928f5d0a4027786acc5843827a6698c56bc1608f",
             "shortcuts": [
                 [
                     "PotPlayer.exe",
